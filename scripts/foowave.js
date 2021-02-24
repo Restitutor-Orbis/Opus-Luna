@@ -21,15 +21,17 @@ var wavesurfer = WaveSurfer.create({
 wavesurfer.load(songPath);
 wavesurfer.setVolume(0.1);
 
-wavesurfer.on('ready', function () {
-    wavesurfer.play();
-});
+playAudio(wavesurfer);
 
 wavesurfer.on('finish', function () {
     rndSong = randomSong(theme);
     songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
     wavesurfer.load(songPath);
-    setTimeout(() => {  wavesurfer.play(); }, 4000);
+    playAudio(wavesurfer);
+});
+
+wavesurfer.on('finish', function () {
+    
 });
 
 
@@ -46,6 +48,8 @@ function updateDisplay(theme, song, ) {
 
 }
 
-function playAudio(songPath) {
-    wavesurfer.load(songPath);
+function playAudio(waveSurfer) {
+    wavesurfer.on('ready', function () {
+        wavesurfer.play();
+    });
 }
