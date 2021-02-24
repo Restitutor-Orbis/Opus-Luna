@@ -30,7 +30,7 @@ wavesurfer.on('finish', function () {
     playAudio(wavesurfer);
 });
 
-wavesurfer.on('interaction ', function () {
+wavesurfer.on('dblclick', function () {
     wavesurfer.pause();
 });
 
