@@ -3,7 +3,7 @@ var rndSong = randomSong(theme);
 var imagePath = "./themes/" + theme + "/image.jpg";
 var songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
 
-var volume = 0.1;
+var volume = 0.15;
 
 console.log("Volume: " + volume);
 
