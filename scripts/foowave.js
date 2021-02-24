@@ -11,13 +11,14 @@ var wavesurfer = WaveSurfer.create({
     cursorColor: '#944035',
     barWidth: 3,
     cursorWidth: 0,
-    height: 200,
+    height: 100,
     barGap: 1
 });
 
 wavesurfer.load(songPath);
 
 wavesurfer.on('ready', function () {
+    wavesurfer.setVolume(0.3);
     wavesurfer.play();
 });
 
