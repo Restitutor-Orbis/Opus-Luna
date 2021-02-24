@@ -49,6 +49,6 @@ body {
 
 #waveform {
     height: 100%;
-    max-width: 30%;
+    max-width: 300px;
     float: left;
 }
