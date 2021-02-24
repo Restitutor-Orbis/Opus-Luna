@@ -15,7 +15,8 @@ var wavesurfer = WaveSurfer.create({
     barWidth: 3,
     cursorWidth: 0,
     height: 100,
-    barGap: 1
+    barGap: 1,
+    mediaControls: true
 });
 
 wavesurfer.load(songPath);
