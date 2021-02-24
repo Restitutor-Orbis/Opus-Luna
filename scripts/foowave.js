@@ -31,9 +31,9 @@ wavesurfer.on('finish', function () {
     playAudio(wavesurfer);
 });
 
-wavesurfer.addEventListener('dblclick', () => 
+wavesurfer.on('dblclick', function () {
     wavesurfer.pause()
-);
+});
 
 function pickTheme() {
     return "0";
