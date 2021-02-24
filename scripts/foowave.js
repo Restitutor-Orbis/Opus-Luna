@@ -1,6 +1,7 @@
 var theme = pickTheme();
+var rndSong = randomSong(theme);
 var imagePath = "./themes/" + theme + "/image.jpg";
-var songPath = getPath_song(theme);
+var songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
 
 var volume = 0.1;
 
@@ -18,20 +19,33 @@ var wavesurfer = WaveSurfer.create({
 });
 
 wavesurfer.load(songPath);
+wavesurfer.setVolume(0.1);
 
 wavesurfer.on('ready', function () {
-    wavesurfer.setVolume(0.1);
     wavesurfer.play();
 });
+
+wavesurfer.on('finish', function () {
+    rndSong = randomSong(theme);
+    songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
+    wavesurfer.load(songPath);
+    wavesurfer.play();
+});
+
 
 
 function pickTheme() {
     return "0";
 }
 
-function getPath_song(theme) {
-    var random = Math.floor(Math.random() * 10) + 1;
-
-    return "./themes/" + theme + "/songs/" + random + ".mp3";
+function randomSong(theme) {
+    return random = Math.floor(Math.random() * 10) + 1;
 }
 
+function updateDisplay(theme, song, ) {
+
+}
+
+function playAudio(songPath) {
+    wavesurfer.load(songPath);
+}
