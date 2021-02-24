@@ -29,7 +29,7 @@ wavesurfer.on('finish', function () {
     rndSong = randomSong(theme);
     songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
     wavesurfer.load(songPath);
-    wavesurfer.play();
+    setTimeout(() => {  wavesurfer.play(); }, 4000);
 });
 
 
