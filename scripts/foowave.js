@@ -2,7 +2,9 @@ var theme = pickTheme();
 var imagePath = "./themes/" + theme + "/image.jpg";
 var songPath = getPath_song(theme);
 
-console.log(songPath);
+var volume = 0.1;
+
+console.log("Volume: " + volume);
 
 var wavesurfer = WaveSurfer.create({
     container: document.querySelector('#waveform'),
