@@ -9,7 +9,7 @@ console.log("Volume: " + volume);
 
 var wavesurfer = WaveSurfer.create({
     container: document.querySelector('#waveform'),
-    waveColor: '#2F2F25',
+    waveColor: '#944035',
     progressColor: '#D9AF67',
     cursorColor: '#944035',
     barWidth: 3,
