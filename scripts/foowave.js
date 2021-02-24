@@ -30,11 +30,9 @@ wavesurfer.on('finish', function () {
     playAudio(wavesurfer);
 });
 
-wavesurfer.on('finish', function () {
-    
+wavesurfer.on('interaction ', function () {
+    wavesurfer.pause();
 });
-
-
 
 function pickTheme() {
     return "0";
