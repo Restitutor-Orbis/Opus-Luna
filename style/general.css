@@ -41,14 +41,14 @@ body {
     width: 100%;
 }
 
-#waveform {
-    height: 100%;
-    max-width: 30%;
-    float: right;
-}
-
 #songinfo {
     height: 100%;
     width: auto;
+    float: left;
+}
+
+#waveform {
+    height: 100%;
+    max-width: 30%;
     float: left;
 }
