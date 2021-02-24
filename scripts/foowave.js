@@ -22,8 +22,6 @@ var wavesurfer = WaveSurfer.create({
 wavesurfer.load(songPath);
 wavesurfer.setVolume(0.1);
 
-playAudio(wavesurfer);
-
 wavesurfer.on('finish', function () {
     rndSong = randomSong(theme);
     songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
@@ -32,8 +30,10 @@ wavesurfer.on('finish', function () {
 });
 
 wavesurfer.on('dblclick', function () {
-    wavesurfer.pause()
+    wavesurfer.playPause()
 });
+
+playAudio(wavesurfer);
 
 function pickTheme() {
     return "0";
