@@ -9,7 +9,7 @@ console.log("Volume: " + volume);
 
 var wavesurfer = WaveSurfer.create({
     container: document.querySelector('#waveform'),
-    waveColor: '#944035',
+    waveColor: '#000000',
     progressColor: '#D9AF67',
     cursorColor: '#944035',
     barWidth: 3,
@@ -30,10 +30,9 @@ wavesurfer.on('finish', function () {
     playAudio(wavesurfer);
 });
 
-wavesurfer.addEventListener('dblclick', function () {
-    wavesurfer.pause();
-    console.log("debug");
-});
+wavesurfer.addEventListener('dblclick', () => 
+    wavesurfer.pause()
+);
 
 function pickTheme() {
     return "0";
