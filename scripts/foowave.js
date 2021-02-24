@@ -3,7 +3,7 @@ var rndSong = randomSong(theme);
 var imagePath = "./themes/" + theme + "/image.jpg";
 var songPath = "./themes/" + theme + "/songs/" + rndSong + ".mp3";
 
-var volume = 0.15;
+var volume = 0.1;
 
 console.log("Volume: " + volume);
 
@@ -32,6 +32,7 @@ wavesurfer.on('finish', function () {
 
 wavesurfer.on('dblclick', function () {
     wavesurfer.pause();
+    console.log("debug");
 });
 
 function pickTheme() {
