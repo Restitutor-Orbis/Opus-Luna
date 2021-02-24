@@ -30,7 +30,7 @@ wavesurfer.on('finish', function () {
     playAudio(wavesurfer);
 });
 
-wavesurfer.on('dblclick', function () {
+wavesurfer.addEventListener('dblclick', function () {
     wavesurfer.pause();
     console.log("debug");
 });
