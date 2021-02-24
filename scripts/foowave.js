@@ -18,7 +18,7 @@ var wavesurfer = WaveSurfer.create({
 wavesurfer.load(songPath);
 
 wavesurfer.on('ready', function () {
-    wavesurfer.setVolume(0.3);
+    wavesurfer.setVolume(0.1);
     wavesurfer.play();
 });
 
