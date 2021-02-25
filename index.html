@@ -10,20 +10,38 @@
         <link rel="stylesheet" href="style/general.css?v=1.0">
         <link rel="icon" type="image/png" href="pics/favicon.ico"/>
 
-        <script src="https://unpkg.com/wavesurfer.js"></script>
+        <script type="text/javascript" src="scripts/searchEngine.js"></script>
+        <script type="text/javascript" src="scripts/clock.js"></script>
+        <script type="text/javascript" src="scripts/themePicker.js"></script>
     </head>
 
-
-    <body>
-        <div id="header">
-            <div id ="songinfo">
-                <div class="textfield"><div id="title">Lean Against the Wind</div></div>
-                <div class="textfield"><div id="subtitle">Redneck Vikings from Hell - Æther Realm</div></div>
+    <body onload="timeTick(), pickBackground()">
+        <div id="background">
+            <!--<div id="header">
+                <div class="textfield">
+                    <h1 id="date">1. Januar</h1>
+                    <h2 id="date">1. Januar</h1>
+                </div>
+            </div>-->
+            <div id="mainSection">
+                <div class="textwrapper">
+                    <div id="title">17:18</div>
+                    <div id="date">25. februar</div>
+                </div>
             </div>
-            <div id="waveform"></div >
+
+            <div id="footer">
+                <div id="searchBox">
+                    <input id="searchbar" autocomplete="off" type="text" title="Search" autofocus onkeydown="search(event)" placeholder="Search Google">
+                </div>
+                <div class="textwrapper">
+                    <div id="quote">Man is an idea, and a precious small idea once he turns his back on love.</div>
+                    <div id="author">~ <span id="authorName">Albert Camus</div></div>
+                </div>
+            </div>
+            <!--<div id="searchBox">
+                <input id="searchbar" autocomplete="off" type="text" title="Search" autofocus onkeydown="search(event)" placeholder="">
+            </div>>-->
         </div>
-
-        <script src="scripts/foowave.js"></script>
-
     </body>
 </html>

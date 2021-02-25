@@ -1,11 +1,17 @@
 :root {
-    --background: #000000;
-    --title: #C39157;
-    --text: #ffffff;
+    --background: #002B36;
+    --title: #FFFFFF;
+    --text: #FFFFFF;
+    --opaqueBackground: rgb(0,0,0);
+    --border: #ACA59A;
   }
 
 body {
-    background-color: var(--background);
+    margin: 0;
+    padding: 0;   
+    height:100%;
+    overflow: hidden;
+    background-color: black;
 }
 
 @font-face {
@@ -13,42 +19,113 @@ body {
     src: url("../fonts/LemonMilkLight-owxMq.otf");
   }
 
+  
+
 /*GENERAL*/
-.textfield {
+.textwrapper {
     color: var(--text);
     font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    margin-top: 5px;
+    text-align: center;
 }
 
 /*OTHER*/
 
+#background {
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+    position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden; 
+    padding: 10px 10px;
+    background-repeat:no-repeat;
+
+    background-image: url("../pics/papes/los muertos/1.1.png");
+    background-position: center;
+    background-size: 100%;
+
+    filter: blur(0px);
+    -webkit-filter: blur(0px);   
+}
+
+#mainSection {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+
+
+    /*background-image: url("../pics/papes/los muertos/0.1.jpg");
+    background-size: 100%;*/
+}
+
 #title {
-    font-size: 65px;
-    font-family: titleFont;
-    letter-spacing: 2px;
-
-    color: var(--title);
-}
-
-#subtitle {
-    padding-top: 5px;
-    padding-left: 2px;
-    font-size: 20px;
+    font-size: 100px;
+    
     font-family: titleFont;
 }
 
-#header {
-    max-height: 150px;
+#date {
+    font-size: 40px;
+    
+    font-family: titleFont;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    height: 140px;
+    padding-bottom: 50px;
 }
 
-#songinfo {
-    height: 100%;
-    width: 50%; 
-    float: left;
+#footer #quote {
+    font-size: 26px;
+    font-style: italic;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#waveform {
-    height: 100%;
-    width: 40%;
-    float: right;
+#footer #author {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#searchBox{
+    margin:0 auto;
+    height: 35px;
+    width:500px;
+    border-radius:5px;
+    border:0px solid var(--text-color);
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#searchBox:hover{
+    box-shadow: 0px 0px 8px 1px var(--text-color);
+}
+
+#searchBox:focus-within{
+    box-shadow: 0px 0px 8px 1px var(--text-color);
+    outline:none;
+}
+
+#searchbar{
+    height:100%;
+    border: none;
+    width:100%;
+    margin-left: 10px;
+    font-size:16px;
+    outline: none;
+    background: none;
+
+    font-size: 10pt;
+    color: var(--quote-color);
 }
