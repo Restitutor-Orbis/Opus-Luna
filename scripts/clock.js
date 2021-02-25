@@ -10,7 +10,6 @@ function timeTick() {
 	if(hours < 10) {
 		hours = "0" + hours;
 	}
-	console.log(hours,minutes)
 
 	document.getElementById("title").innerHTML = (hours + ":" + minutes);
 
