@@ -19,9 +19,12 @@ function search(event) {
             let query = text.substring(commandEnd + 1,queryScope); //saves the query
 
             switch(commandName) {
-            	case("img"):
+            	case "img":
             		url = "https://www.google.com/search?tbm=isch&q=" + query;
             		break;
+				case "wiki":
+					url = "https://en.wikipedia.org/wiki/" + query;
+					break;
             	default:
 					url = "index.html";
 					break;

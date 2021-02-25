@@ -17,13 +17,15 @@ function timeTick() {
 	setTimeout(timeTick, 10000);
 }
 
-function date() {
+function setDate() {
     var date = new Date();
     var month = date.getMonth();
     var day = date.getDate();
 
     const monthNames = ["Januar", "Februar", "Marts", "April", "Maj", "Juni",
-    "Juli", "August", "September", "October", "November", "December"];
+    "Juli", "August", "September", "Oktober", "November", "December"];
 
-    month = 
+    month = monthNames[month];
+
+    document.getElementById("date").innerHTML = (day + ". " + month);
 }
