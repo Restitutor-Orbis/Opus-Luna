@@ -2,10 +2,11 @@
 //make sure all images are the same type
 
 function pickBackground() {
-    var N = 3; // number of images
+    var N = 6; // number of images
     var image = randomPicker(N);
     var path = "./pics/0/" + image + ".png";
 
+    //document.getElementById("background").style.backgroundImage = "url(" + "'" + path + "'" +")";
     document.getElementById("background").style.backgroundImage = "url(" + "'" + path + "'" +")";
 }
 
