@@ -1,7 +1,12 @@
 # Opus Luna
 
-Feeds fetched with feednami
+# RSS feeds
+Feeds fetched with feednami:https://toolkit.sekando.com/docs/en/feednami
 
-Fonts used:
-https://zacfreeland.com/portfolio/cornerstone/
+# Weather
+Weather fetched with Open Weather Map: https://openweathermap.org/api
+Most of the code for the weather fetching is taken from the great start page https://github.com/0-l/dawn
+
+# Fonts
+Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
  
