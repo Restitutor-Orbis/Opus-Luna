@@ -48,11 +48,11 @@ body {
 	width: 100%;
 	overflow: hidden; 
     padding: 10px 10px;
-    background-repeat:no-repeat;
 
     background-image: url("../pics/papes/los muertos/1.1.png");
     background-position: center;
-    background-size: 100%;
+    background-repeat: repeat-y;
+    background-size: cover;
 
     filter: blur(0px);
     -webkit-filter: blur(0px);   
