@@ -21,9 +21,15 @@ function fetchFeed(url) {
             //create a list element
             let li = document.createElement('li');
             //add HTML content to list items
-            li.innerHTML = `<h4><a href="${entry.link}">${entry.title}</a></h4>`;
+            li.innerHTML = `<h5><a href="${entry.link}">${entry.title}</a></h5>`;
+            //append HTML content to list 
+            //create a list element
+            let li2 = document.createElement('li');
+            //add HTML content to list items
+            li2.innerHTML = `<h6><p>${entry.summary}</p></h6>`;
             //append HTML content to list 
             textarea.appendChild(li);
+            textarea.appendChild(li2);
 
             //only load the first 5 feeds
             i++;

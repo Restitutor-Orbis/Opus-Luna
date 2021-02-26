@@ -3,7 +3,7 @@
     --title: #FFFFFF;
     --text: #FFFFFF;
     --secondarytext: #000000;
-    --opaqueBackground: rgb(255,255,255,0.9);
+    --opaqueBackground: rgb(255,255,255,0.7);
     --border: #ACA59A;
   }
 
@@ -87,14 +87,14 @@ body {
 
 #sidepanel {
     position: absolute;
-    left: -360px;
+    left: -362px;
     top: 0;
     padding-right: 10px;
 
     height: 100%;
     width: 350px;
     background-color: var(--opaqueBackground);
-    border-right: 2px solid black;
+    border-right: 2px solid #351112;
 
     transition: 1s;
     z-index: 10;
@@ -118,25 +118,37 @@ body {
 }
 
 #feed-textarea a{
-    margin-top: 20px;
-    padding-bottom: 50px;
     color: var(--secondarytext);
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
+    font-weight: 120;
+}
+
+#feed-textarea p{
+    margin-top: -30px;
+    padding-top: 15px;
+    color: var(--secondarytext);
+    text-decoration: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
     font-weight: 120;
     font-style: italic;
 }
 
 #feed-textarea ul{
     list-style-type: none;
-    margin-left: -15px;
 }
 
 #feed-textarea li {
-    /*padding: 1px 0;*/
-    border-bottom: 1px dashed var(--secondarytext);
+    /*padding: 1px 0;
+    border-bottom: 1px dashed var(--secondarytext);*/
     margin-right: 15px;
+    margin-left: -20px;
+    padding-bottom: 0px;
+    padding-left: 10px;
+    border-left: 3px solid red;
+    display: block;
 }
 
 #footer {
@@ -169,22 +181,12 @@ body {
     margin-bottom: 20px;
 }
 
-#searchBox:hover{
-    box-shadow: 0px 0px 8px 1px var(--text-color);
-}
-
-#searchBox:focus-within{
-    box-shadow: 0px 0px 8px 1px var(--text-color);
-    outline:none;
-}
-
 #searchbar{
     height:100%;
     border: none;
     width:100%;
-    margin-left: 10px;
+    margin-left: 40px;
 
-    
     font-size:16px;
     outline: none;
     background: none;
@@ -194,4 +196,17 @@ body {
     padding:0 5px;
     line-height:100%;
     
+}
+
+#searchBox #icon {
+    height: 25px;
+    width: 25px;
+    background-image: url("../pics/loupe.svg");
+    background-size: 100%;
+
+    margin-top: -30px;
+    margin-left: 5px;
+
+    
+    float: left;
 }
