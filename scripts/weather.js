@@ -1,3 +1,14 @@
+/* Weather class made by users:
+* https://github.com/0-l
+* https://github.com/Tomhet
+* https://github.com/2huch
+* https://github.com/kakolisgay
+* https://github.com/Demonstrandum
+*
+* Taken from the startpage project https://github.com/0-l/dawn
+*/
+
+
 var weather = null;
 var visible = false;
 
@@ -46,12 +57,6 @@ function changeLocation(event) {
         }
     }
 }
-
-
-/* Weather class made by user...
-*
-*
-*/
 var tempCity;
 
 class Weather {
