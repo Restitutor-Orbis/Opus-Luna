@@ -87,6 +87,7 @@ class Weather {
           document.getElementById("weatherInput").placeholder = city;
           document.getElementById("weatherInput").value = "";
           document.getElementById("weatherButton").innerHTML = `${temperature}ºC`;
+          weatherToggleOff();
     }
   
     fetchWeather(callback) {
