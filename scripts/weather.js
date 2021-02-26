@@ -22,8 +22,9 @@ function initWeather() {
         place = localStorage.place;
     }
 
-    document.getElementById("weatherInput").placeholder = place;
+    console.log(localStorage.place);
 
+    document.getElementById("weatherInput").placeholder = place;
     weather = new Weather(place);
     weather.getWeather;   
 }
