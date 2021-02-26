@@ -16,7 +16,7 @@ var visible = false;
 function initWeather() {
     var place;
 
-    if(localStorage.place === null) {
+    if(localStorage.place === "undefined") {
         place = standardCity;
     } else {
         place = localStorage.place;
