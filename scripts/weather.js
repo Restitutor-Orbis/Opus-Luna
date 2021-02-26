@@ -13,14 +13,12 @@ var standardCity = "Copenhagen";
 var weather = null;
 var visible = false;
 
+console.log("debug 1.0");
+
 function initWeather() {
     var place;
 
-    if(localStorage.place === "undefined") {
-        place = standardCity;
-    } else {
-        place = localStorage.place;
-    }
+    place = localStorage.place || standardCity;
 
     console.log(localStorage.place);
 
