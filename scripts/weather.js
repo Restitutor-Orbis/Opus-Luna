@@ -6,17 +6,18 @@
 * https://github.com/Demonstrandum
 *
 * Taken from the startpage project https://github.com/0-l/dawn
+* And modified by me
 */
 
-
+var standardCity = "Copenhagen";
 var weather = null;
 var visible = false;
 
 function initWeather() {
     var place;
 
-    if(localStorage.getItem("place") == "") {
-        place = "Copenhagen";
+    if(localStorage.place === null) {
+        place = standardCity;
     } else {
         place = localStorage.place;
     }
