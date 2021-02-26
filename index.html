@@ -13,11 +13,13 @@
         <script type="text/javascript" src="scripts/searchEngine.js"></script>
         <script type="text/javascript" src="scripts/clock.js"></script>
         <script type="text/javascript" src="scripts/themePicker.js"></script>
+        <script type="text/javascript" src="scripts/weather.js"></script>
         
+        <!--feednami API-->
         <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     </head>
 
-    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed()">
+    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed(), initWeather()">
         <script src="scripts/fetcher.js"></script>
         <div id="background">
             <div id="sidepanel">
@@ -32,7 +34,13 @@
             <div id="mainSection">
                 <div class="textwrapper">
                     <div id="title"></div>
-                    <div id="date"></div>
+                    <div id="dateWeather">
+                        <div id="date"></div>
+                        <div id="weather" onmouseover="weatherToggle()" onmouseout="weatherToggle()">
+                            <button id="weatherButton"></button>
+                            <input id="weatherInput" onkeydown="changeLocation(event)" placeholder="city">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -42,7 +50,7 @@
                     <div id="icon"></div>
                 </div>
                 <div class="textwrapper">
-                    <div id="quote">Truth, like light, blinds. Falsehood, on the contrary, is a beautiful twilight that enhances every object.</div>
+                    <div id="quote">In the midst of winter, I found there was, within me, an invincible summer.</div>
                     <div id="author">~ <span id="authorName">Albert Camus</div></div>
                 </div>
             </div>

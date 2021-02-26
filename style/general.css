@@ -84,8 +84,56 @@ body {
 
 #date {
     font-size: 40px;
-    
     font-family: titleFont;
+    position: relative;
+}
+
+#weather {
+    position: absolute;
+    left: 79%; /*these percentages somehow work*/
+    top: 76%;
+    width: 170px;
+    height: 50px;
+}
+
+#weather #weatherButton {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    padding: 0;
+    border: none;
+    background: rgb(0,0,0, 0); /*allows clicking*/
+
+    font-size: 20px;
+    color: var(--text);
+}
+
+#weather #weatherInput {
+    position: absolute;
+    top: 49%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    width: 120px;
+
+    background: none;bottom;
+    border: none;
+    outline: none;
+    color: rgb(255,255,255,0.7);
+
+    font-size: 18px;
+}
+
+#weather #weatherInput::placeholder { 
+    font-size: 20px;
+}
+
+#weather #weatherInput:focus { 
+    
 }
 
 #sidepanel {
