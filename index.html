@@ -36,9 +36,9 @@
                     <div id="title"></div>
                     <div id="dateWeather">
                         <div id="date"></div>
-                        <div id="weather" onmouseover="weatherToggle()" onmouseout="weatherToggle()">
+                        <div id="weather" onmouseover="weatherToggleOn()" onmouseout="weatherToggleOff()">
                             <button id="weatherButton"></button>
-                            <input id="weatherInput" onkeydown="changeLocation(event)" placeholder="city">
+                            <input id="weatherInput" onkeydown="changeLocation(event)" onfocusout="weatherToggleOff()" placeholder="city">
                         </div>
                     </div>
                 </div>

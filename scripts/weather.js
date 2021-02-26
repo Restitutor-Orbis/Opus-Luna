@@ -28,18 +28,24 @@ function initWeather() {
 }
 
 
-function weatherToggle() {
-    if(!visible) {
-        document.getElementById("weatherInput").style.visibility = "visible";
-        document.getElementById("weatherButton").style.visibility = "hidden";
-        visible = true;
-    } else {
-        document.getElementById("weatherInput").style.visibility = "hidden";
-        document.getElementById("weatherButton").style.visibility = "visible";
-        visible = false;
-    }
+function weatherToggleOn() {
+    document.getElementById("weatherInput").style.visibility = "visible";
+    document.getElementById("weatherButton").style.visibility = "hidden";
+    visible = true;
 }
 
+function weatherToggleOff() {
+    var refreshIntervalId = setInterval(toggleOff(refreshIntervalId), 1000);
+
+    function toggleOff() {
+        if(document.getElementById("weatherInput") !== document.activeElement) {
+            document.getElementById("weatherInput").style.visibility = "hidden";
+            document.getElementById("weatherButton").style.visibility = "visible";
+            visible = false;
+            clearInterval(refreshIntervalId);
+        }
+    }
+}
 
 function changeLocation(event) {
     if(event.key == "Enter") {
