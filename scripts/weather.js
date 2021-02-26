@@ -13,14 +13,10 @@ var standardCity = "Copenhagen";
 var weather = null;
 var visible = false;
 
-console.log("debug 1.0");
-
 function initWeather() {
     var place;
 
     place = localStorage.place || standardCity;
-
-    console.log(localStorage.place);
 
     document.getElementById("weatherInput").placeholder = place;
     weather = new Weather(place);

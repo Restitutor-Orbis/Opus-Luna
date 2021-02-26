@@ -48,17 +48,20 @@ body {
 	right:0px;
     position: absolute;
 	height: 100%;
-	width: 100%;
-	overflow: hidden; 
+	width: 100%; 
     padding: 10px 10px;
 
     background-image: url("../pics/papes/los muertos/1.1.png");
     background-position: center;
-    background-repeat: repeat-y;
-    background-size: cover;
+    background-size: cover;  
+    overflow: hidden;
+}
 
-    filter: blur(0px);
-    -webkit-filter: blur(0px);   
+#feedTitle {
+    margin: -10px -10px 0 -15px;
+    padding: 20px 0 15px 0;
+    background-color: #DEB818;
+    color: #0E1625;
 }
 
 #mainSection {
@@ -138,7 +141,7 @@ body {
     top: 0;
     padding-right: 10px;
 
-    height: 100%;
+    height: auto;
     width: 350px;
     background-color: var(--opaqueBackground);
 
@@ -167,6 +170,13 @@ body {
     background-repeat: no-repeat;
     background-position:right;
     transition: 0.5s;
+}
+
+#feed-textarea {
+    height: auto;
+    overflow-y: scroll;
+    display: table;
+    /*scrollbar-width: none;*/
 }
 
 #feed-textarea a{

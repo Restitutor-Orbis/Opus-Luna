@@ -3,10 +3,12 @@
 
 function getRssFeed() {
     let url1 = "https://www.dr.dk/nyheder/service/feeds/udland";
-    let url2 = "https://www.dr.dk/nyheder/service/feeds/indland";
+    let url2 = "https://www.dr.dk/nyheder/service/feeds/vejret";
+    let url3 = "https://www.dr.dk/nyheder/service/feeds/sporten";
 
     fetchFeed(url1);
     fetchFeed(url2);
+    fetchFeed(url3);
 }
 
 function fetchFeed(url) {
@@ -33,7 +35,7 @@ function fetchFeed(url) {
 
             //only load the first 5 feeds
             i++;
-            if(i == 5) {
+            if(i == 8) {
                 break;
             }
         }

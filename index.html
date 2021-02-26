@@ -18,16 +18,17 @@
         <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     </head>
 
-    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed(), initWeather()">
+    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed(), initWeather(), pickQuote()">
         <script src="scripts/fetcher.js"></script>
         <div id="background">
             <div id="sidepanel">
                 <div id="newsIcon"></div>
                 <div class="textwrapper">
-                    <h1>Feeds</h1>
+                    <h1 id="feedTitle">Feeds</h1>
                 </div>
                 <div id="feed-textarea">
                     <ul></ul>
+                    <div style="clear: both;"></div>
                 </div>
             </div>
             <div id="mainSection">
