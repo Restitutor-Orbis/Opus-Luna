@@ -1,10 +1,10 @@
-## Opus Luna
+# Opus Luna
 A random wallpaper when you open the tab, a quote that only changes daily, and the current temperature in your city!
 
 Also includes a RSS-feed displayer when hovered to the left of the screen.
 
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
-# How to use
+## How to use
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
 
 Instructions for editing the files can be found in comments.
@@ -12,15 +12,15 @@ Instructions for editing the files can be found in comments.
 - Quotes can be edited in "themePicker.js".
 - Wallpapers can be edited "themePicker.js".
 - Search engine commands can be edited/added/removed in "searchEngine.js".  
-## CREDITS
+# CREDITS
 
-# Feeds
+## Feeds
 Feeds fetched with feednami:https://toolkit.sekando.com/docs/en/feednami
 
-# Weather
+## Weather
 Weather fetched with Open Weather Map: https://openweathermap.org/api
 Most of the code for the weather fetching is taken from the great start page https://github.com/0-l/dawn
 
-# Fonts
+## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
  
