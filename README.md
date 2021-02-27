@@ -1,4 +1,7 @@
 # Opus Luna
+
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase1.png?raw=true)
+
 A random wallpaper when you open the tab, a quote that only changes daily, and the current temperature in your city!
 
 Also includes a RSS-feed displayer when hovered to the left of the screen.
