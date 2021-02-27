@@ -39,23 +39,24 @@ function generateQuote() {
 
     switch(author) {
         case "Albert Camus":
-        console.log("this fucking boulder");
-        quotes.set("0",
-        "In the midst of winter, I found there was, within me, an invincible summer.");
-        quotes.set("1",
-        "A man without ethics is a wild beast loosed upon this world.");
-        quotes.set("2",
-        "Those who lack the courage will always find a philosophy to justify it.");
-        quotes.set("3",
-        "Absolute virtue is impossible and the republic of forgiveness leads, with implacable logic, to the republic of the guillotine.");
-        quotes.set("4",
-        "Man is an idea, and a precious small idea once he turns his back on love.");
-        quotes.set("5",
-        "Seeking what is true is not seeking what is desirable.");
-        quotes.set("6",
-        "I know simply that the sky will last longer than I.");
-        quotes.set("7",
-        "He who despairs of the human condition is a coward, but he who has hope for it is a fool.");
+            quotes.set("0",
+            "In the midst of winter, I found there was, within me, an invincible summer.");
+            quotes.set("1",
+            "A man without ethics is a wild beast loosed upon this world.");
+            quotes.set("2",
+            "Those who lack the courage will always find a philosophy to justify it.");
+            quotes.set("3",
+            "Absolute virtue is impossible and the republic of forgiveness leads, with implacable logic, to the republic of the guillotine.");
+            quotes.set("4",
+            "Man is an idea, and a precious small idea once he turns his back on love.");
+            quotes.set("5",
+            "Seeking what is true is not seeking what is desirable.");
+            quotes.set("6",
+            "I know simply that the sky will last longer than I.");
+            quotes.set("7",
+            "He who despairs of the human condition is a coward, but he who has hope for it is a fool.");
+            break;
+        
     }
 
     var M = quotes.size;
