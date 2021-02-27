@@ -1,14 +1,21 @@
 //Uses feednami
 //https://toolkit.sekando.com/docs/en/feednami
 
-function getRssFeed() {
-    let url1 = "https://www.dr.dk/nyheder/service/feeds/udland";
-    let url2 = "https://www.dr.dk/nyheder/service/feeds/vejret";
-    let url3 = "https://www.dr.dk/nyheder/service/feeds/sporten";
+//TO DO
+//add parser to the history facts feeds - the date is unnecesarry and crude
 
-    fetchFeed(url1);
-    fetchFeed(url2);
-    fetchFeed(url3);
+function getRssFeed() {
+    var links = [];
+    //NEWS
+    //links.push("https://www.dr.dk/nyheder/service/feeds/udland");
+    //links.push("https://www.dr.dk/nyheder/service/feeds/indland");
+    //links.push("https://www.dr.dk/nyheder/service/feeds/vejret");
+
+    //HISTORY FACTS
+    links.push("https://feeds.feedburner.com/historicalevents");
+    links.push("https://feeds.feedburner.com/famousdeaths");
+
+    links.forEach(fetchFeed); //fetches every link added
 }
 
 function fetchFeed(url) {
@@ -35,7 +42,7 @@ function fetchFeed(url) {
 
             //only load the first 5 feeds
             i++;
-            if(i == 8) {
+            if(i == 5) {
                 break;
             }
         }

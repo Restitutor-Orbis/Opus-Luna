@@ -141,7 +141,7 @@ body {
     top: 0;
     padding-right: 10px;
 
-    height: auto;
+    height: 100%;
     width: 350px;
     background-color: var(--opaqueBackground);
 
@@ -173,7 +173,7 @@ body {
 }
 
 #feed-textarea {
-    height: auto;
+    height: 100%;
     overflow-y: scroll;
     display: table;
     /*scrollbar-width: none;*/
@@ -183,8 +183,9 @@ body {
     color: var(--secondarytext);
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 120;
+    font-weight: 200;
 }
 
 #feed-textarea p{
@@ -195,7 +196,13 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 120;
-    font-style: italic;
+    /*font-style: italic;*/
+}
+
+#feed-textarea p a {
+    color: var(--feedborder);
+    font-size: 14px;
+    /*color: #a4dfdc;*/ 
 }
 
 #feed-textarea ul{
