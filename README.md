@@ -7,7 +7,7 @@ A random wallpaper when you open the tab, a quote that only changes daily, and t
 Also includes a RSS-feed displayer when hovered to the left of the screen.
 
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
-## How to use
+## How to use (customization)
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
 Hover over the temperature to see the currently displayed city-temperature. 
 
