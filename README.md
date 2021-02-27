@@ -25,6 +25,7 @@ Feeds fetched with feednami:https://toolkit.sekando.com/docs/en/feednami
 
 ## Weather
 Weather fetched with Open Weather Map: https://openweathermap.org/api
+
 Most of the code for the weather fetching is taken from the great start page https://github.com/0-l/dawn
 
 ## Fonts
