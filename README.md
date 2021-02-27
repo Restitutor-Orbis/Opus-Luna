@@ -9,7 +9,7 @@ Also includes a RSS-feed displayer when hovered to the left of the screen.
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
 ## How to use (customization)
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
-Hover over the temperature to see the currently displayed city-temperature. 
+Hover over the temperature to see which city the temperature is taken from.
 
 The month is in Danish, but you can simply out-comment the English and delete the Danish enumeration in the "setDate()" function in "clock.js"
 
@@ -21,7 +21,7 @@ Instructions for editing the files can be found in comments.
 # CREDITS
 
 ## Feeds
-Feeds fetched with feednami:https://toolkit.sekando.com/docs/en/feednami
+Feeds fetched with feednami: https://toolkit.sekando.com/docs/en/feednami
 
 ## Weather
 Weather fetched with Open Weather Map: https://openweathermap.org/api
