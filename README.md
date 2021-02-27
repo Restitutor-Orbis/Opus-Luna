@@ -28,6 +28,10 @@ Weather fetched with Open Weather Map: https://openweathermap.org/api
 
 Most of the code for the weather fetching is taken from the great start page https://github.com/0-l/dawn
 
+## Icon
+
+Loupe-icon used in the search bar: https://www.flaticon.com/download/icon/landing/622669?format=svg&size=512
+
 ## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
  
