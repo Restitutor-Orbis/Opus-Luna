@@ -21,8 +21,13 @@ function setDate() {
     var month = date.getMonth();
     var day = date.getDate();
 
+	//DANISH MONTH NAMES
     const monthNames = ["Januar", "Februar", "Marts", "April", "Maj", "Juni",
     "Juli", "August", "September", "Oktober", "November", "December"];
+
+	//ENGLISH MONTH NAMES
+	//const monthNames = ["January", "February", "March", "April", "May", "June",
+    //"July", "August", "September", "October", "November", "December"];
 
     month = monthNames[month];
 
