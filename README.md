@@ -6,6 +6,7 @@ Also includes a RSS-feed displayer when hovered to the left of the screen.
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
 ## How to use
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
+Hover over the temperature to see the currently displayed city-temperature. 
 
 Instructions for editing the files can be found in comments.
 - If you want to edit the RSS feeds it can easily be done in "fetcher.js".
