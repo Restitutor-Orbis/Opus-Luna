@@ -11,6 +11,8 @@ The search bar supports a few commands like ".img <text>" for searching google i
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
 Hover over the temperature to see the currently displayed city-temperature. 
 
+The month is in Danish, but you can simply out-comment the English and delete the Danish enumeration in the "setDate()" function in "clock.js"
+
 Instructions for editing the files can be found in comments.
 - If you want to edit the RSS feeds it can easily be done in "fetcher.js".
 - Quotes can be edited in "themePicker.js".
