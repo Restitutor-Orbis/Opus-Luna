@@ -18,6 +18,11 @@ Instructions for editing the files can be found in comments.
 - Quotes can be edited in "themePicker.js".
 - Wallpapers can be edited "themePicker.js".
 - Search engine commands can be edited/added/removed in "searchEngine.js".  
+# To be added
+
+- Translation of weather information (clear, sunny, etc.) into local language
+- Front-end settings window (for wallpapers, RSS feeds, and languages)
+
 # CREDITS
 
 ## Feeds
