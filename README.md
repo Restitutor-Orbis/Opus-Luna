@@ -9,6 +9,14 @@ Also includes a RSS-feed displayer when hovered to the left of the screen.
 Currently supported languages for the calender are Spanish, Danish, and English.
 
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
+ 
+ ## Customize wallpapers
+ Simply drag your cursor to the rop right. These images are stored in your local storage, so they are saved for your next visit.
+ But because of this the files can't be too big. In total they can't be bigger than 5mb (probably less due to other stored data).
+ 
+ If you wish to have higher resolution wallpapers, then you can add them to your local repository and edit "themePicker.js". This should be fairly intuituve.
+ To reset the images type "localStorage.clear()" in the browser console.
+ 
 ## How to use (customization)
 Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
 Hover over the temperature to see which city the temperature is taken from.
@@ -21,7 +29,8 @@ Instructions for editing the files can be found in comments.
 # To be added
 
 - Translation of weather information (clear, sunny, etc.) into local language
-- Front-end settings window (for wallpapers, RSS feeds, and languages)
+- Front-end settings window (for ~wallpapers~, RSS feeds, and languages)
+- A 'reset' button for backgrounds
 
 # CREDITS
 
