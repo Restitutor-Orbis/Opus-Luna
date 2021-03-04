@@ -1,15 +1,14 @@
 # Opus Luna
 
 ![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase1.png?raw=true)
-![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase0.mp4?raw=true)
 
 A random wallpaper when you open the tab, a quote that only changes daily, and the current temperature in your city!
 
 Also includes a RSS-feed displayer when hovered to the left of the screen.
 
-Currently supported languages for the calender are Spanish, Danish, and English.
+Currently supported languages for the calender are Spanish, Danish, and English. This is detected by your browser's set language.
 
-The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
+The search bar supports a few commands like ".img 'text'" for searching google images and ".wiki 'text'" for searching wikipedia.
  
  ## Customize wallpapers
  Simply drag your cursor to the rop right. These images are stored in your local storage, so they are saved for your next visit.
@@ -18,8 +17,10 @@ The search bar supports a few commands like ".img <text>" for searching google i
  If you wish to have higher resolution wallpapers, then you can add them to your local repository and edit "themePicker.js". This should be fairly intuituve.
  To reset the images type "localStorage.clear()" in the browser console.
  
+ ![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase2.png?raw=true)
+ 
 ## How to use (customization)
-Front-end you can only customize the city from which the temperature is displayed. This city is stored for the next time you open the tab. 
+Front-end you can customize the city from which the temperature is displayed as well as the 5 used wallpapers. This city is stored for the next time you open the tab. 
 Hover over the temperature to see which city the temperature is taken from.
 
 Instructions for editing the files can be found in comments.
@@ -50,4 +51,6 @@ Gear-icon used in settings: https://www.flaticon.com/free-icon/gear-symbol_45312
 
 ## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
+
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase3.png?raw=true)
  
