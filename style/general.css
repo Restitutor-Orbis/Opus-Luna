@@ -200,17 +200,21 @@ body {
     position: relative;
 }
 
-#weather {
-    position: absolute;
-    left: 79%; /*these percentages somehow work*/
-    top: 76%;
-    width: 270px;
+#dateWeather {
     height: auto;
-    margin-top: 12px;
+}
+
+#weather {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6px;
+    width: auto;
+    height: auto;
 }
 
 #weather #weatherButton {
-    float: left;
+    margin-left: 20%;
+    margin-right: 0%;
 
     padding: 0;
     border: none;
@@ -221,11 +225,9 @@ body {
 }
 
 #weather #weatherInput {
-    float: left;
-
     visibility: hidden;
     width: 120px;
-    margin-left: -70px;
+    margin-left: -50px;
 
     background: none;
     border: none;
