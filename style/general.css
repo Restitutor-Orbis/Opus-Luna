@@ -210,11 +210,14 @@ body {
     margin-top: 6px;
     width: 300px;
     height: auto;
+    position: relative;
 }
 
 #weather #weatherButton {
-    margin-left: auto;
-    margin-right: auto;
+    position:absolute;
+    width:50px;
+    left:45%;
+    margin-left:-25px;
 
     padding: 0;
     border: none;
@@ -222,16 +225,15 @@ body {
 
     font-size: 20px;
     color: var(--text);
+    z-index: 2;
 }
 
 #weather #weatherInput {
+    position:absolute;
+    width:120px;
+    left:45%;
+    margin-left:-25px;
     visibility: hidden;
-    width: 120px;
-    margin-right: 30%;
-    margin-right: 0;
-    position: absolute;
-    bottom: 0;
-    left: 45%;
 
     background: none;
     border: none;
@@ -239,6 +241,7 @@ body {
     color: rgb(255,255,255,0.7);
 
     font-size: 18px;
+    z-index: 1;
 }
 
 #weather #weatherInput::placeholder { 

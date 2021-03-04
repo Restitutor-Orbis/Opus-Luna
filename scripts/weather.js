@@ -25,7 +25,8 @@ function initWeather() {
 
 function weatherToggleOn() {
     document.getElementById("weatherInput").style.visibility = "visible";
-    document.getElementById("weatherButton").style.visibility = "hidden";
+    document.getElementById("weatherButton").style.width = 0;
+    document.getElementById("weatherButton").style.color = "rgb(0,0,0,0)";
     visible = true;
 }
 
@@ -35,7 +36,8 @@ function weatherToggleOff() {
     function toggleOff() {
         if(document.getElementById("weatherInput") !== document.activeElement) {
             document.getElementById("weatherInput").style.visibility = "hidden";
-            document.getElementById("weatherButton").style.visibility = "visible";
+            document.getElementById("weatherButton").style.width = "auto";
+            document.getElementById("weatherButton").style.color = "white";
             visible = false;
             clearInterval(refreshIntervalId);
         }
