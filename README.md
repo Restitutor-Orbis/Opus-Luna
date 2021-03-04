@@ -7,7 +7,7 @@ A random wallpaper when you open the tab, a quote that only changes daily, and t
 
 Also includes a RSS-feed displayer when hovered to the left of the screen.
 
-Currently supported languages for the calender are Spanish, Danish, and English.
+Currently supported languages for the calender are Spanish, Danish, and English. This is detected by your browser's set language.
 
 The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
  
