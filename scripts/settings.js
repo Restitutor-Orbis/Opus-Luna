@@ -20,38 +20,68 @@ function changeImage(number) {
 }
 
 function loadFile(event) {
-    var url = URL.createObjectURL(event.target.files[0]);
-    var url = "url('" + url + "')";
-    var imageWrapper = getImageWrapper(url);
+    var src = URL.createObjectURL(event.target.files[0]);
+    var imageWrapper = getImageWrapper();
     var background = document.getElementById("background");
 
-    console.log(imageWrapper);
-
-    imageWrapper.style.backgroundImage = url;
+    imageWrapper.src = src;
     imageWrapper.style.backgroundSize = "cover";
-    background.style.backgroundImage = url;
+
+    var reader = new FileReader();
+    reader.readAsDataURL(event.target.files[0]); 
+    reader.onloadend = function() {
+        var base64data = reader.result;                
+        base64data += "";
+        saveImage(base64data);
+    }
+    
+    //background.style.backgroundImage = temp_url;
+}
+
+function saveImage(base64) {
+    switch(selectedImage) {
+        case 1: 
+            localStorage.bg1 = base64;
+            break;
+        case 2: 
+            //localStorage.bg2 = url
+            localStorage.bg2 = base64;
+            break;
+        case 3: 
+            //localStorage.bg3 = url
+            localStorage.bg3 = base64;
+            break;
+        case 4: 
+            //localStorage.bg4 = url
+            localStorage.bg4 = base64;
+            break;
+        case 5: 
+            //localStorage.bg5 = url
+            localStorage.bg5 = base64;
+            break;
+    }
 }
 
 function getImageWrapper(url) {
     switch(selectedImage) {
         case 1: 
-            localStorage.bg1 = url;
+            //localStorage.bg1 = url;
             return document.getElementById("image1");
             break;
         case 2: 
-            localStorage.bg2 = url
+            //localStorage.bg2 = url
             return document.getElementById("image2");
             break;
         case 3: 
-            localStorage.bg3 = url
+            //localStorage.bg3 = url
             return document.getElementById("image3");
             break;
         case 4: 
-            localStorage.bg4 = url
+            //localStorage.bg4 = url
             return document.getElementById("image4");
             break;
         case 5: 
-            localStorage.bg5 = url
+            //localStorage.bg5 = url
             return document.getElementById("image5");
             break;
     }

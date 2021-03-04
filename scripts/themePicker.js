@@ -1,10 +1,11 @@
-//put all background images into the same folder and create that path on line 7
-//make sure all images are the same type
-var standardBackground1 =  "url(" + "'" + "./pics/0/0.png" + "'" +")";
-var standardBackground2 =  "url(" + "'" + "./pics/0/1.png" + "'" +")";
-var standardBackground3 =  "url(" + "'" + "./pics/0/2.png" + "'" +")";
-var standardBackground4 =  "url(" + "'" + "./pics/0/3.png" + "'" +")";
-var standardBackground5 =  "url(" + "'" + "./pics/0/4.png" + "'" +")";
+//save the images locally in the directory and specify their path down here.
+//do localStorage.clear(); to reset any uploaded pictures (also resets your temperatue)
+
+var standardBackground1 =  "./pics/0/0.png";
+var standardBackground2 =  "./pics/0/1.png";
+var standardBackground3 =  "./pics/0/2.png";
+var standardBackground4 =  "./pics/0/3.png";
+var standardBackground5 =  "./pics/0/4.png";
 
 function pickBackground() {
     var background1 = localStorage.bg1 || standardBackground1;
@@ -20,7 +21,13 @@ function pickBackground() {
     image = background[image];
 
     //document.getElementById("background").style.backgroundImage = "url(" + "'" + path + "'" +")";
-    document.getElementById("background").style.backgroundImage = image;
+    document.getElementById("background").src = image;
+
+    document.getElementById("image1").src = background1;
+    document.getElementById("image2").src = background2;
+    document.getElementById("image3").src = background3;
+    document.getElementById("image4").src = background4;
+    document.getElementById("image5").src = background5;
 }
 
 function randomPicker(i) {
