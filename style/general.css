@@ -55,6 +55,7 @@ body {
     font-family: titleFont;
     opacity: 100%;
     visibility: hidden;
+    pointer-events: none; 
 }
 
 .imageWrapper:hover {
