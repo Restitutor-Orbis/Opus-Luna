@@ -31,8 +31,6 @@ function getMonthNames() {
 	var lan = navigator.languages[0];
 	var monthNames;
 
-	lan = "es";
-
 	switch(lan) {
 		case "da": //DANISH MONTH NAMES
 			monthNames = ["Januar", "Februar", "Marts", "April", "Maj", "Juni",
