@@ -9,7 +9,7 @@ Also includes a RSS-feed displayer when hovered to the left of the screen.
 
 Currently supported languages for the calender are Spanish, Danish, and English. This is detected by your browser's set language.
 
-The search bar supports a few commands like ".img <text>" for searching google images and ".wiki <text>" for searching wikipedia.
+The search bar supports a few commands like ".img 'text'" for searching google images and ".wiki 'text'" for searching wikipedia.
  
  ## Customize wallpapers
  Simply drag your cursor to the rop right. These images are stored in your local storage, so they are saved for your next visit.
