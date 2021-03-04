@@ -36,6 +36,7 @@ Most of the code for the weather fetching is taken from the great start page htt
 ## Icon
 
 Loupe-icon used in the search bar: https://www.flaticon.com/download/icon/landing/622669?format=svg&size=512
+Gear-icon used in settings: https://www.flaticon.com/free-icon/gear-symbol_45312
 
 ## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
