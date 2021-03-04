@@ -1,13 +1,14 @@
 :root {
     --background: #002B36;
-    --title: #FFFFFF;
     --text: #FFFFFF;
     --secondarytext: #FEFEFE;
-    --italics: #D8D8D8;
+    --italics: #0E1625;
     --opaqueBackground: rgb(255,255,255,0.7);
     --opaqueBackground: #0E1625;
+    --opaqueBackground: #FFFFFF;
     --border: #ACA59A;
     --feedborder: #DEB818;
+    --feedborder: #6F1519;
   }
 
 body {
@@ -37,9 +38,120 @@ body {
 .textwrapper h1 {
     color: var(--secondarytext);
     font-family: titleFont;
+    text-align: center;
+}
+
+.imageWrapper {
+    width: 80%;
+    height: 150px;
+    margin: 30px 10% 30px 10%;
+}
+
+.imageText {
+    color :white;
+    text-align: center;
+    padding-top: 70px;
+    font-size: 16px;
+    font-family: titleFont;
+    opacity: 100%;
+    visibility: hidden;
+}
+
+.imageWrapper:hover {
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.imageWrapper:hover .imageText{
+    visibility: visible;
 }
 
 /*OTHER*/
+
+#image1 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../pics/0/0.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+#image2 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../pics/0/0.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+#image3 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../pics/0/0.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+#image4 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../pics/0/0.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+#image5 {
+    height: 100%;
+    width: 100%;
+    background-image: url("../pics/0/0.png");
+    background-size: cover;
+    border-radius: 20px;
+}
+
+#settingsPanel {
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding-right: 10px;
+
+    height: 100%;
+    width: 350px;
+    background-color: rgb(0,0,0,0.4);
+
+    transition: 1s;
+    z-index: 10;
+}
+
+#settingsPanel:hover {
+    /*margin-right: 360px;*/
+    transition: 0.7s;
+}
+
+#settingsPanel:hover {
+    margin-left: 360px;
+    transition: 1s;
+}
+
+#settingsPanel:hover > #settingsIcon {
+    width: 0;
+    transition: 0.7s;
+}
+
+#settingsTitle {
+    text-align: center;
+    font-family: titleFont;
+    color: white;
+}
+
+#settingsIcon {
+    position: absolute;
+    top: 10px;
+    right: 361px;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    background-image: url("../pics/gear.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.5s;
+}
+
 
 #background {
 	top:0px;
@@ -60,8 +172,8 @@ body {
 #feedTitle {
     margin: -10px -10px 0 -15px;
     padding: 20px 0 15px 0;
-    background-color: #DEB818;
-    color: #0E1625;
+    background-color: var(--feedborder);
+    color: var(--text);
 }
 
 #mainSection {
@@ -95,16 +207,13 @@ body {
     position: absolute;
     left: 79%; /*these percentages somehow work*/
     top: 76%;
-    width: 170px;
-    height: 50px;
+    width: 270px;
+    height: auto;
+    margin-top: 12px;
 }
 
 #weather #weatherButton {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    float: left;
 
     padding: 0;
     border: none;
@@ -115,13 +224,11 @@ body {
 }
 
 #weather #weatherInput {
-    position: absolute;
-    top: 49%;
-    left: 40%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    float: left;
+
     visibility: hidden;
     width: 120px;
+    margin-left: -70px;
 
     background: none;
     border: none;
@@ -172,6 +279,13 @@ body {
     transition: 0.5s;
 }
 
+/*makes it possible to add multiple feeds next to each other. Requires some tinkering*/
+.feedBlock {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
 #feed-textarea {
     height: 100%;
     overflow-y: scroll;
@@ -180,7 +294,7 @@ body {
 }
 
 #feed-textarea a{
-    color: var(--secondarytext);
+    color: var(--italics);
     text-decoration: none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
@@ -275,7 +389,11 @@ body {
 
     margin-top: -30px;
     margin-left: 5px;
-
     
     float: left;
+}
+
+#newsMarquee {
+    background-color: red;
+    color: white;
 }

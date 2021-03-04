@@ -1,13 +1,26 @@
 //put all background images into the same folder and create that path on line 7
 //make sure all images are the same type
+var standardBackground1 =  "url(" + "'" + "./pics/0/0.png" + "'" +")";
+var standardBackground2 =  "url(" + "'" + "./pics/0/1.png" + "'" +")";
+var standardBackground3 =  "url(" + "'" + "./pics/0/2.png" + "'" +")";
+var standardBackground4 =  "url(" + "'" + "./pics/0/3.png" + "'" +")";
+var standardBackground5 =  "url(" + "'" + "./pics/0/4.png" + "'" +")";
 
 function pickBackground() {
-    var N = 6; // number of images
+    var background1 = localStorage.bg1 || standardBackground1;
+    var background2 = localStorage.bg2 || standardBackground2;
+    var background3 = localStorage.bg3 || standardBackground3;
+    var background4 = localStorage.bg4 || standardBackground4;
+    var background5 = localStorage.bg5 || standardBackground5;
+
+    var background = [background1, background2, background3, background4, background5];
+
+    var N = 5; // number of images
     var image = randomPicker(N);
-    var path = "./pics/0/" + image + ".png";
+    image = background[image];
 
     //document.getElementById("background").style.backgroundImage = "url(" + "'" + path + "'" +")";
-    document.getElementById("background").style.backgroundImage = "url(" + "'" + path + "'" +")";
+    document.getElementById("background").style.backgroundImage = image;
 }
 
 function randomPicker(i) {

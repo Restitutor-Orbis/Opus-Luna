@@ -13,22 +13,57 @@
         <script type="text/javascript" src="scripts/clock.js"></script>
         <script type="text/javascript" src="scripts/themePicker.js"></script>
         <script type="text/javascript" src="scripts/weather.js"></script>
+        <script type="text/javascript" src="scripts/settings.js"></script>
         
         <!--feednami API-->
         <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     </head>
 
-    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed(), initWeather(), pickQuote()">
+    <body onload="timeTick(), setDate(), pickBackground(), getRssFeed(), initWeather(), pickQuote(), initSettings()">
         <script src="scripts/fetcher.js"></script>
-        <div id="background">
+        <div id="background"></div>
+            <input id="file-input" type="file" name="name" accept="image/png, image/jpeg" style="display: none;" onchange="loadFile(event)"/>
+            <div id="settingsPanel">
+                <div id="settingsIcon"></div>
+                <div id="textwrapper">
+                    <h1 id="settingsTitle">Settings</h1>
+                </div>
+                <div class="imageWrapper">
+                    <div id="image1" onClick="changeImage(1)">
+                        <div class="imageText">Change Image</div>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <div id="image2" onClick="changeImage(2)">
+                        <div class="imageText">Change Image</div>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <div id="image3" onClick="changeImage(3)">
+                        <div class="imageText">Change Image</div>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <div id="image4" onClick="changeImage(4)">
+                        <div class="imageText">Change Image</div>
+                    </div>
+                </div>
+                <div class="imageWrapper">
+                    <div id="image5" onClick="changeImage(5)">
+                        <div class="imageText">Change Image</div>
+                    </div>
+                </div>
+            </div>
             <div id="sidepanel">
                 <div id="newsIcon"></div>
-                <div class="textwrapper">
-                    <h1 id="feedTitle">today</h1>
-                </div>
-                <div id="feed-textarea">
-                    <ul></ul>
-                    <div style="clear: both;"></div>
+                <div class="feedBlock">
+                    <div class="textwrapper">
+                        <h1 id="feedTitle">today</h1>
+                    </div>
+                    <div id="feed-textarea">
+                        <ul></ul>
+                        <div style="clear: both;"></div>
+                    </div>
                 </div>
             </div>
             <div id="mainSection">
@@ -50,9 +85,10 @@
                     <div id="icon"></div>
                 </div>
                 <div class="textwrapper">
-                    <div id="quote">In the midst of winter, I found there was, within me, an invincible summer.</div>
-                    <div id="author">~ <span id="authorName">Albert Camus</div></div>
+                    <div id="quote"></div>
+                    <div id="author">~ <span id="authorName"></div>
                 </div>
+            </div>
             </div>
         </div>
     </body>

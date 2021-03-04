@@ -23,7 +23,6 @@ function initWeather() {
     weather.getWeather;   
 }
 
-
 function weatherToggleOn() {
     document.getElementById("weatherInput").style.visibility = "visible";
     document.getElementById("weatherButton").style.visibility = "hidden";
@@ -52,6 +51,7 @@ function changeLocation(event) {
         try {
             var weather = new Weather(city);
             weather.getWeather;
+            document.getElementById("weatherInput").blur();
         }
         catch(error) {
             console.log(error);
@@ -82,7 +82,7 @@ class Weather {
 
           document.getElementById("weatherInput").placeholder = city;
           document.getElementById("weatherInput").value = "";
-          document.getElementById("weatherButton").innerHTML = `${temperature}ºC`;
+          document.getElementById("weatherButton").innerHTML = `${temperature}º` + " " + weather.toLowerCase();
           weatherToggleOff();
     }
   
