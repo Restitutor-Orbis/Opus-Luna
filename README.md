@@ -1,7 +1,7 @@
 # Opus Luna
 
 ![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase1.png?raw=true)
-![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase0.mp4?raw=true)
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase2.png?raw=true)
 
 A random wallpaper when you open the tab, a quote that only changes daily, and the current temperature in your city!
 
@@ -50,4 +50,6 @@ Gear-icon used in settings: https://www.flaticon.com/free-icon/gear-symbol_45312
 
 ## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
+
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase3.png?raw=true)
  
