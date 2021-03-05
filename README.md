@@ -1,6 +1,6 @@
 # Opus Luna
 
-![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/1.png?raw=true)
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase1.png?raw=true)
 
 A random wallpaper when you open the tab, a quote that only changes daily, and the current temperature in your city!
 
@@ -17,7 +17,7 @@ The search bar supports a few commands like ".img 'text'" for searching google i
  If you wish to have higher resolution wallpapers, then you can add them to your local repository and edit "themePicker.js". This should be fairly intuituve.
  To reset the images type "localStorage.clear()" in the browser console.
  
- ![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/2.png?raw=true)
+ ![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase2.png?raw=true)
  
 ## How to use (customization)
 Front-end you can customize the city from which the temperature is displayed as well as the 5 used wallpapers. This city is stored for the next time you open the tab. 
@@ -52,5 +52,5 @@ Gear-icon used in settings: https://www.flaticon.com/free-icon/gear-symbol_45312
 ## Fonts
 Font used is Lemon Milk: https://www.dafont.com/lemon-milk.font
 
-![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/3.png?raw=true)
+![alt text](https://github.com/Restitutor-Orbis/Opus-Luna/blob/main/showcases/showcase3.png?raw=true)
  
