@@ -202,7 +202,7 @@ body {
 
 #weather {
     position: absolute;
-    left: 76%; /*these percentages somehow work*/
+    left: 81%; /*these percentages somehow work*/
     top: 76%;
     width: 270px;
     height: auto;
