@@ -55,7 +55,6 @@ body {
     font-family: titleFont;
     opacity: 100%;
     visibility: hidden;
-    pointer-events: none; 
 }
 
 .imageWrapper:hover {
@@ -162,6 +161,7 @@ body {
     position: absolute;
 	height: 100%;
 	width: 100%; 
+    padding: 10px 10px;
 
     object-fit: cover;
 }
@@ -175,7 +175,7 @@ body {
 
 #mainSection {
     width: 500px;
-    height: auto;
+    height: 200px;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -200,24 +200,17 @@ body {
     position: relative;
 }
 
-#dateWeather {
-    height: auto;
-}
-
 #weather {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 6px;
-    width: 300px;
+    position: absolute;
+    left: 76%; /*these percentages somehow work*/
+    top: 76%;
+    width: 270px;
     height: auto;
-    position: relative;
+    margin-top: 12px;
 }
 
 #weather #weatherButton {
-    position:absolute;
-    width:50px;
-    left:45%;
-    margin-left:-25px;
+    float: left;
 
     padding: 0;
     border: none;
@@ -225,15 +218,14 @@ body {
 
     font-size: 20px;
     color: var(--text);
-    z-index: 2;
 }
 
 #weather #weatherInput {
-    position:absolute;
-    width:120px;
-    left:45%;
-    margin-left:-25px;
+    float: left;
+
     visibility: hidden;
+    width: 120px;
+    margin-left: -0px;
 
     background: none;
     border: none;
@@ -241,7 +233,6 @@ body {
     color: rgb(255,255,255,0.7);
 
     font-size: 18px;
-    z-index: 1;
 }
 
 #weather #weatherInput::placeholder { 
